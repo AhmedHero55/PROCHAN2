@@ -1,8 +1,11 @@
-ext {
-    extName = 'Team X'
-    extClass = '.TeamX'
-    extVersionCode = 23
-    isNsfw = false
+plugins {
+    id 'com.android.library' version '8.2.1' apply false
+    id 'kotlin-android' version '1.9.10' apply false
 }
 
-apply from: "$rootDir/common.gradle"
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
